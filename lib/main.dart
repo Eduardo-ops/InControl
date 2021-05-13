@@ -5,8 +5,8 @@ void main() {
       title: "Contador de Pessoas",
       home: Stack(
         children: <Widget>[
-        Image.asset(
-          "images/imagem2.jpg",
+         Image.asset(
+          "images/imagem1.jpg",
           fit: BoxFit.cover,
           height: 1000.0,
         ),
@@ -44,7 +44,7 @@ void main() {
             Text(
               "Disponível!",
               style: TextStyle(
-                  color: Colors.green,
+                  color: Colors.white,
                   fontStyle: FontStyle.italic,
                   fontSize: 30.0),
             )
