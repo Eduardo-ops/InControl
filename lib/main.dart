@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
     });
 
     // Lógica para verificar se o estabelecimento está disponível para entrada ou não.
-    if (_pessoas > 0 && _pessoas <= 10) {
+    if (_pessoas >= 0 && _pessoas <= 10) {
       _local = "Disponível!";
     } else if (_pessoas > 10) {
       _local = "Lotado.";
@@ -58,7 +58,10 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           Text(
             "Pessoas: $_pessoas",
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                decoration: TextDecoration.none,
+                color: Colors.white,
+                fontWeight: FontWeight.bold),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -92,6 +95,7 @@ class _HomeState extends State<Home> {
           Text(
             "$_local",
             style: TextStyle(
+                decoration: TextDecoration.none,
                 color: Colors.white,
                 fontStyle: FontStyle.italic,
                 fontSize: 30.0),

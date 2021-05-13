@@ -1,5 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.contador_de_pessoas">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    package="br.com.incontrol"> Em packge, sempre usar um nome baseado na estrutura de seu projeto, se não pode gerar conflito no firebase.
    <application
         android:label="contador_de_pessoas"
         android:icon="@mipmap/ic_launcher">
